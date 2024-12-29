@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product List</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row col-md-8">
+          <h2 class="mb-4 title">Desserts</h2>
+          <div class="col-md-4 product mb-4" id="item_1">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-baklava-desktop.jpg"
+                alt="baklava"
+                id="product-image-1"
+              />
+              <div id="btn-add-to-cart-1">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-1"
+                  onclick="addToCart(1)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_1">Baklava</span>
+            <p class="description">Pistachio Baklava</p>
+            <span class="price" id="item_price_1">$4.00</span>
+          </div>
+
+          <div class="col-md-4 product mb-4" id="item_2">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-brownie-desktop.jpg"
+                alt="baklava"
+                id="product-image-2"
+              />
+              <div id="btn-add-to-cart-2">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-2"
+                  onclick="addToCart(2)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_2">Brownie</span>
+            <p class="description">Salted Caramel Brownie</p>
+            <span class="price" id="item_price_2">$5.50</span>
+          </div>
+
+          <div class="col-md-4 product mb-4" id="item_3">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-cake-desktop.jpg"
+                alt="baklava"
+                id="product-image-3"
+              />
+              <div id="btn-add-to-cart-3">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-3"
+                  onclick="addToCart(3)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_3">Cake</span>
+            <p class="description">Red Velvet Cake</p>
+            <span class="price" id="item_price_3">$4.50</span>
+          </div>
+
+          <div class="col-md-4 product mb-4" id="item_4">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-creme-brulee-desktop.jpg"
+                alt="baklava"
+                id="product-image-4"
+              />
+              <div id="btn-add-to-cart-4">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-4"
+                  onclick="addToCart(4)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_4">Creme Brulee</span>
+            <p class="description">Vanille Bean Creme Brulee</p>
+            <span class="price" id="item_price_4">$7.00</span>
+          </div>
+
+          <div class="col-md-4 product mb-4" id="item_5">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-macaron-desktop.jpg"
+                alt="baklava"
+                id="product-image-5"
+              />
+              <div id="btn-add-to-cart-5">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-5"
+                  onclick="addToCart(5)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_5">Macaron</span>
+            <p class="description">Macaron with chocolate and strawberries</p>
+            <span class="price" id="item_price_5">$7.00</span>
+          </div>
+
+          <div class="col-md-4 product mb-4" id="item_6">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-meringue-desktop.jpg"
+                alt="baklava"
+                id="product-image-6"
+              />
+              <div id="btn-add-to-cart-6">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-6"
+                  onclick="addToCart(6)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_6">Pie</span>
+            <p class="description">Lemmon Meringue Pie</p>
+            <span class="price" id="item_price_6">$5.00</span>
+          </div>
+
+          <div class="col-md-4 product mb-4" id="item_7">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-panna-cotta-desktop.jpg"
+                alt="baklava"
+                id="product-image-7"
+              />
+              <div id="btn-add-to-cart-7">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-7"
+                  onclick="addToCart(7)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_7">Panna Cotta</span>
+            <p class="description">Vanilla Panna Cotta</p>
+            <span class="price" id="item_price_7">$6.50</span>
+          </div>
+          <div class="col-md-4 product mb-4" id="item_8">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-tiramisu-desktop.jpg"
+                alt="baklava"
+                id="product-image-8"
+              />
+              <div id="btn-add-to-cart-8">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-8"
+                  onclick="addToCart(8)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_8">Tiramisu</span>
+            <p class="description">Classic Tiramisu</p>
+            <span class="price" id="item_price_8">$5.50</span>
+          </div>
+          <div class="col-md-4 product mb-4" id="item_9">
+            <div
+              class="d.flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./Images/image-waffle-desktop.jpg"
+                alt="baklava"
+                id="product-image-9"
+              />
+              <div id="btn-add-to-cart-9">
+                <button
+                  class="btn btn-primary overlay-add-to-cart"
+                  id="add-to-cart-9"
+                  onclick="addToCart(9)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 21 20"
+                  >
+                    <g fill="#C73B0F" clip-path="url(#a)">
+                      <path
+                        d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"
+                      />
+                      <path
+                        d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M.333 0h20v20h-20z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <span class="name" id="item_name_9">Waffle</span>
+            <p class="description">Waffle with berries</p>
+            <span class="price" id="item_price_9">$6.50</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-0 mb-4">
+          <div class="right-sidebar bg-light">
+            <h2 class="cart">Your Cart(<span id="cart-count">0</span>)</h2>
+            <div class="cart-empty" id="cart-empty">
+              <img src="./Images/illustration-empty-cart.svg" alt="baklava" />
+              <p class="name">Your added items will appear here</p>
+            </div>
+            <div id="cart-items"></div>
+            <div class="order-summary" id="order-summary">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="total-price">Order Total</span>
+                <span class="total-price-value" id="total-price-value"
+                  >$00.00</span
+                >
+              </div>
+              <p id="carbon" class="mt-3 mb-3 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  fill="none"
+                  viewBox="0 0 21 20"
+                >
+                  <path
+                    fill="#1EA575"
+                    d="M8 18.75H6.125V17.5H8V9.729L5.803 8.41l.644-1.072 2.196 1.318a1.256 1.256 0 0 1 .607 1.072V17.5A1.25 1.25 0 0 1 8 18.75Z"
+                  />
+                  <path
+                    fill="#1EA575"
+                    d="M14.25 18.75h-1.875a1.25 1.25 0 0 1-1.25-1.25v-6.875h3.75a2.498 2.498 0 0 0 2.488-2.747 2.594 2.594 0 0 0-2.622-2.253h-.99l-.11-.487C13.283 3.56 11.769 2.5 9.875 2.5a3.762 3.762 0 0 0-3.4 2.179l-.194.417-.54-.072A1.876 1.876 0 0 0 5.5 5a2.5 2.5 0 1 0 0 5v1.25a3.75 3.75 0 0 1 0-7.5h.05a5.019 5.019 0 0 1 4.325-2.5c2.3 0 4.182 1.236 4.845 3.125h.02a3.852 3.852 0 0 1 3.868 3.384 3.75 3.75 0 0 1-3.733 4.116h-2.5V17.5h1.875v1.25Z"
+                  />
+                </svg>
+                This is a <strong>carbon-neutral </strong>delivery
+              </p>
+              <button class="btn w-100 confirm-order" id="confirm-order">
+                Confirm Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------modal confirmation --------------------------->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-md-4 p-3 p-sm-2">
+          <div class="row gap-2">
+            <div class="col-12 mb-2">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 32.121L13.5 24.6195L15.6195 22.5L21 27.879L32.3775 16.5L34.5 18.6225L21 32.121Z"
+                  fill="#1EA575"
+                />
+                <path
+                  d="M24 3C19.8466 3 15.7865 4.23163 12.333 6.53914C8.8796 8.84665 6.18798 12.1264 4.59854 15.9636C3.0091 19.8009 2.59323 24.0233 3.40352 28.0969C4.21381 32.1705 6.21386 35.9123 9.15077 38.8492C12.0877 41.7861 15.8295 43.7862 19.9031 44.5965C23.9767 45.4068 28.1991 44.9909 32.0364 43.4015C35.8736 41.812 39.1534 39.1204 41.4609 35.667C43.7684 32.2135 45 28.1534 45 24C45 18.4305 42.7875 13.089 38.8493 9.15076C34.911 5.21249 29.5696 3 24 3ZM24 42C20.4399 42 16.9598 40.9443 13.9997 38.9665C11.0397 36.9886 8.73256 34.1774 7.37018 30.8883C6.0078 27.5992 5.65134 23.98 6.34587 20.4884C7.04041 16.9967 8.75474 13.7894 11.2721 11.2721C13.7894 8.75473 16.9967 7.0404 20.4884 6.34587C23.98 5.65133 27.5992 6.00779 30.8883 7.37017C34.1774 8.73255 36.9886 11.0397 38.9665 13.9997C40.9443 16.9598 42 20.4399 42 24C42 28.7739 40.1036 33.3523 36.7279 36.7279C33.3523 40.1036 28.7739 42 24 42Z"
+                  fill="#1EA575"
+                />
+              </svg>
+            </div>
+            <div class="col-md-12 col-sm-6">
+              <h2 class="title">Order Confirmed</h2>
+              <span class="mb-4 description-modal"
+                >We hope you enjoy your food!</span
+              >
+            </div>
+            <div class="col-12 mt-2">
+              <div class="container modal-items">
+                <div id="items-order">
+                  <div class="row">
+                    <div class="col-3 col-sm-2" style="height: 60px">
+                      <img
+                        src="./Images/image-baklava-thumbnail.jpg"
+                        alt=""
+                        id="item-image"
+                        class="rounded"
+                        height="100%"
+                        width="50px"
+                      />
+                    </div>
+                    <div
+                      class="col-9 col-md-10 col-sm-10 d-flex flex-row justify-content-between align-items-start"
+                    >
+                      <div
+                        class="d-flex flex-column justify-content-between align-items-start"
+                      >
+                        <span class="name-item">Baklava</span>
+                        <div
+                          class="d.flex justify-content-between text-start mt-2 align-items-center"
+                        >
+                          <span class="counter">1x</span>
+                          <span class="ms-2 price">@</span>
+                          <span class="price">$5.50</span>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-center align-items-stratch"
+                        style="height: 50px"
+                      >
+                        <strong class="total-price-item-order">$5.56</strong>
+                      </div>
+                    </div>
+
+                    <hr class="mt-2 mb-2" />
+                  </div>
+                </div>
+
+                <div
+                  class="row col-md-12 justify-content-center align-items-center"
+                  id="total-order"
+                >
+                  <span class="col ms-2">Order Total</span>
+                  <strong class="col text-end" id="total-price-order"
+                    >$00.00</strong
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <button class="btn confirm-order w-100" id="start-new-order">
+                Start New Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
