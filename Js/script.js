@@ -27,7 +27,6 @@ function displayProductList() {
   var totalPrice = 0;
   for (var i = 0; i < productList.length; i++) {
     var product = productList[i];
-    console.log(product.price.toPrecision(3));
     cartItemsList += `<div class="row cart-item">
     <div class="col-10">
       <div class="d-flex flex-column">
