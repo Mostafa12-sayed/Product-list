@@ -27,6 +27,7 @@ function displayProductList() {
   var totalPrice = 0;
   for (var i = 0; i < productList.length; i++) {
     var product = productList[i];
+    console.log(product.price.toPrecision(3));
     cartItemsList += `<div class="row cart-item">
     <div class="col-10">
       <div class="d-flex flex-column">
@@ -286,10 +287,9 @@ function confirmOrder() {
       <div class="row">
           <div class="col-3 col-sm-2" style="height: 60px">
             <img
-              src="./Images/image-${product.name.replace(
-                " ",
-                "-"
-              )}-thumbnail.jpg"
+              src="./Images/image-${product.name
+                .replace(" ", "-")
+                .toLowerCase()}-thumbnail.jpg"
               alt=""
               id="item-image"
               class="rounded"
@@ -356,3 +356,5 @@ function startNewOrder() {
   $("#exampleModalCenter").modal("hide");
   location.reload();
 }
+
+console.log();
